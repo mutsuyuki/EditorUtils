@@ -9,7 +9,6 @@ using UnityEngine;
 public class TrianglesImporter : ScriptedImporter {
     public override void OnImportAsset(AssetImportContext context) {
         var name = System.IO.Path.GetFileNameWithoutExtension(assetPath);
-        ;
 
         // 仮想のファイルタイプ「mytriangle」には、三角形の中心点(x,y,z）だけが書き込まれている想定
         // 読み込んでVector3にパースする
